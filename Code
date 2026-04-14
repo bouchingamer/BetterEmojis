@@ -1,0 +1,52 @@
+/**
+ * @name AppleEmojis
+ * @description Replaces Discords emojis with Apples.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Apple
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css");
+
+/**
+ * @name WindowsEmojis
+ * @description Replaces Discords emojis with Windows.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Windows
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Windows.css");
+
+/**
+ * @name WhatsappEmojis
+ * @description Replaces Discords emojis with Whatsapps.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   WhatsApp
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/WhatsApp.css");
+
+
+/**
+ * @name GoogleEmojis
+ * @description Replaces Discords emojis with googles
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Google
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
