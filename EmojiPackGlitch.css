@@ -1,0 +1,25 @@
+/**
+ * @name EmojiPackGlitch
+ * @author notbouchh
+ * @description Broken corrupted emoji system.
+ * @version 1.0.0
+ */
+
+@keyframes emojiGlitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, 0); }
+  80% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
+}
+
+img.emoji {
+  animation: emojiGlitch 0.3s infinite !important;
+  filter: contrast(1.5) !important;
+}
+
+/* chromatic shift */
+img.emoji::after {
+  content: "";
+}
