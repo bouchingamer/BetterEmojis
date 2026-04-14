@@ -1,0 +1,97 @@
+/**
+ * @name GlitchEmojiSystem
+ * @author notbouchh
+ * @description Corrupts every emoji with glitch, flicker, distortion effects.
+ * @version 1.0.0
+ */
+
+/* =========================
+   BASE EMOJI
+========================= */
+img.emoji {
+  transform: scale(1.1);
+  image-rendering: auto !important;
+  will-change: transform, filter;
+}
+
+/* =========================
+   MAIN GLITCH MOVEMENT
+========================= */
+@keyframes emojiGlitchMove {
+  0% { transform: translate(0,0) scale(1.1); }
+  20% { transform: translate(-1px,1px) scale(1.1); }
+  40% { transform: translate(1px,-1px) scale(1.1); }
+  60% { transform: translate(-1px,0) scale(1.1); }
+  80% { transform: translate(1px,1px) scale(1.1); }
+  100% { transform: translate(0,0) scale(1.1); }
+}
+
+/* =========================
+   FLICKER / SIGNAL LOSS
+========================= */
+@keyframes emojiFlicker {
+  0% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.3; }
+  94% { opacity: 1; }
+  97% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* =========================
+   COLOR CORRUPTION
+========================= */
+@keyframes emojiColorShift {
+  0% { filter: hue-rotate(0deg) contrast(1.2); }
+  50% { filter: hue-rotate(180deg) contrast(1.5); }
+  100% { filter: hue-rotate(360deg) contrast(1.2); }
+}
+
+/* =========================
+   APPLY GLITCH TO ALL EMOJIS
+========================= */
+img.emoji {
+  animation:
+    emojiGlitchMove 0.25s infinite,
+    emojiFlicker 2s infinite,
+    emojiColorShift 3s linear infinite;
+}
+
+/* =========================
+   RANDOM HEAVY CORRUPTION
+========================= */
+img.emoji:nth-child(5n) {
+  filter: grayscale(1) contrast(2) brightness(0.7) !important;
+}
+
+img.emoji:nth-child(7n) {
+  transform: scale(1.3) rotate(3deg);
+}
+
+img.emoji:nth-child(9n) {
+  animation-duration: 0.1s, 1s, 2s;
+}
+
+/* =========================
+   HOVER = SYSTEM BREAK
+========================= */
+img.emoji:hover {
+  transform: scale(1.5) skewX(10deg) !important;
+  filter: contrast(2) brightness(1.5) !important;
+}
+
+/* =========================
+   REACTIONS
+========================= */
+.reaction img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* =========================
+   JUMBO EMOJIS
+========================= */
+.emoji.jumboable {
+  width: 34px !important;
+  height: 34px !important;
+}
