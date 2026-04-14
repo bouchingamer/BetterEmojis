@@ -1,0 +1,84 @@
+/**
+ * @name GamerEmojis
+ * @author notbouchh
+ * @description RGB glowing gamer-style emojis.
+ * @version 1.0.0
+ */
+
+/* =========================
+   BASE EMOJI
+========================= */
+img.emoji {
+  transform: scale(1.15);
+  image-rendering: auto !important;
+  transition: 0.2s ease;
+}
+/* =========================
+   RGB GLOW (MAIN EFFECT)
+========================= */
+@keyframes rgbGlow {
+  0%   { filter: drop-shadow(0 0 4px red); }
+  25%  { filter: drop-shadow(0 0 4px orange); }
+  50%  { filter: drop-shadow(0 0 4px lime); }
+  75%  { filter: drop-shadow(0 0 4px cyan); }
+  100% { filter: drop-shadow(0 0 4px magenta); }
+}
+img.emoji {
+  animation: rgbGlow 2s linear infinite;
+}
+/* =========================
+   HOVER = PRO MODE
+========================= */
+img.emoji:hover {
+  transform: scale(1.35) rotate(3deg);
+  filter: drop-shadow(0 0 10px cyan) brightness(1.2) !important;
+}
+/* =========================
+   CLICK FEEL (FAST FLASH)
+========================= */
+img.emoji:active {
+  transform: scale(1.5);
+  filter: brightness(2) drop-shadow(0 0 12px white);
+}
+/* =========================
+   RARITY SYSTEM (LIKE LOOT)
+========================= */
+/* rare */
+img.emoji:nth-child(5n) {
+  filter: drop-shadow(0 0 6px #00f6ff);
+}
+/* epic */
+img.emoji:nth-child(7n) {
+  filter: drop-shadow(0 0 8px purple);
+}
+/* legendary */
+img.emoji:nth-child(11n) {
+  filter: drop-shadow(0 0 12px gold);
+}
+/* =========================
+   REACTION EMOJIS
+========================= */
+.reaction img {
+  width: 22px !important;
+  height: 22px !important;
+}
+/* =========================
+   JUMBO EMOJIS
+========================= */
+.emoji.jumboable {
+  width: 34px !important;
+  height: 34px !important;
+}
+/* =========================
+   EXTRA: FPS STYLE SHAKE
+========================= */
+@keyframes gamerShake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-1px,1px); }
+  50% { transform: translate(1px,-1px); }
+  75% { transform: translate(-1px,0); }
+  100% { transform: translate(0); }
+}
+img.emoji:nth-child(13n) {
+  animation: gamerShake 0.2s infinite, rgbGlow 2s linear infinite;
+}
