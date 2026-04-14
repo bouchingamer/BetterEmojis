@@ -1,0 +1,12 @@
+/**
+ * @name OpenMojiEmojis
+ * @description Replaces Discord emojis with OpenMojis.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   OpenMoji
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/OpenMoji.css");
