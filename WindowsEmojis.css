@@ -1,0 +1,12 @@
+/**
+ * @name WindowsEmojis
+ * @description Replaces Discords emojis with Windows.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Windows
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Windows.css");
