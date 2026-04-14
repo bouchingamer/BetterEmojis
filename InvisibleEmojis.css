@@ -1,0 +1,54 @@
+/**
+ * @name InvisibleEmojis
+ * @author notbouchh
+ * @description Replaces ALL emojis with a lock emoji style (🔒).
+ * @version 2.0.0
+ */
+
+/* =========================
+   BASE EMOJI HIDING
+========================= */
+img.emoji {
+  opacity: 0 !important;
+  position: relative !important;
+}
+/* =========================
+   FORCE LOCK EMOJI OVERLAY
+========================= */
+img.emoji::before {
+  content: "🔒";
+  opacity: 1 !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+  filter: none !important;
+}
+/* =========================
+   MESSAGE EMOJIS FIX
+========================= */
+.messageContent img.emoji {
+  width: 20px !important;
+  height: 20px !important;
+}
+/* =========================
+   REACTIONS
+========================= */
+.reaction img {
+  opacity: 0 !important;
+  position: relative !important;
+}
+.reaction img::before {
+  content: "🔒";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+}
+/* =========================
+   HOVER EFFECT (LOCK GLOW)
+========================= */
+img.emoji:hover {
+  filter: drop-shadow(0 0 6px #000);
+  transform: scale(1.3);
+}
