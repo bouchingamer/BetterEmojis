@@ -1,0 +1,12 @@
+/**
+ * @name TossEmojis
+ * @description Replaces Discord emojis with Toss emojis.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Toss
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Toss.css");
