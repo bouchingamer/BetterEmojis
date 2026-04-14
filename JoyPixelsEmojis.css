@@ -1,0 +1,12 @@
+/**
+ * @name JoyPixelsEmojis
+ * @description Replaces Discord emojis with JoyPixels.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   JoyPixels
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/JoyPixels.css");
