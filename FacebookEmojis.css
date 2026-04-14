@@ -1,0 +1,12 @@
+/**
+ * @name FacebookEmojis
+ * @description Replaces Discord emojis with Facebooks.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Facebook
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css");
