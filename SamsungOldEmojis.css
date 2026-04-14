@@ -1,0 +1,12 @@
+/**
+ * @name SamsungOldEmojis
+ * @description Replaces Discord emojis with old Samsung emojis.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Samsung-Old
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Samsung-Old.css");
