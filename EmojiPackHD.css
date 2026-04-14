@@ -1,0 +1,13 @@
+/**
+ * @name EmojiPackHD
+ * @author notbouchh
+ * @description Makes emojis appear sharper and more vivid.
+ * @version 1.0.0
+ */
+
+/* ===== HD Emoji Pack ===== */
+img.emoji {
+  image-rendering: auto !important;
+  filter: contrast(1.1) saturate(1.2) brightness(1.05) !important;
+  transform: scale(1.1) !important;
+}
