@@ -1,0 +1,12 @@
+/**
+ * @name HuaweiEmojis
+ * @description Replaces Discord emojis with Huaweis.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Huawei
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Huawei.css");
