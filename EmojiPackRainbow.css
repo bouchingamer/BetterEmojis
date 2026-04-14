@@ -1,0 +1,21 @@
+/**
+ * @name EmojiPackRainbow
+ * @author notbouchh
+ * @description Animated RGB emojis.
+ * @version 1.0.0
+ */
+
+@keyframes emojiRainbow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+img.emoji {
+  animation: emojiRainbow 3s linear infinite !important;
+  transform: scale(1.15) !important;
+}
+
+/* hover boost */
+img.emoji:hover {
+  transform: scale(1.3) !important;
+}
