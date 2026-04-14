@@ -1,0 +1,12 @@
+/**
+ * @name WhatsappEmojis
+ * @description Replaces Discords emojis with Whatsapps.
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   WhatsApp
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/WhatsApp.css");
