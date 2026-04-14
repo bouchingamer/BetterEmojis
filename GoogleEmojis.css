@@ -1,0 +1,12 @@
+/**
+ * @name GoogleEmojis
+ * @description Replaces Discords emojis with googles
+ * @author notbouchh
+ * @version 1.0.0
+ */
+
+/* =========================
+   EMOJI PROVIDER IMPORT
+   Google
+========================= */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
