@@ -1,0 +1,17 @@
+/**
+ * @name EmojiPackMinecraft
+ * @author notbouchh
+ * @description Turns emojis into pixel-style Minecraft vibe.
+ * @version 1.0.0
+ */
+
+img.emoji {
+  image-rendering: pixelated !important;
+  filter: contrast(1.4) saturate(1.2) !important;
+  transform: scale(1.2) !important;
+}
+
+/* blocky feel */
+.messageContent .emoji {
+  border-radius: 2px !important;
+}
