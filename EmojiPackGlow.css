@@ -1,0 +1,15 @@
+/**
+ * @name EmojiPackGlow
+ * @author notbouchh
+ * @description Makes emojis glow like rare items.
+ * @version 1.0.0
+ */
+
+img.emoji {
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
+}
+
+/* stronger glow on hover */
+img.emoji:hover {
+  filter: drop-shadow(0 0 10px rgba(0,255,255,0.8)) !important;
+}
